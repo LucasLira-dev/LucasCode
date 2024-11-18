@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body{
+    background-color: #202024;
+}
+
+header{
+    background-color: rgba(78, 72, 72, 0.189);
+   
+    height: 140px;
+}
+
+header > h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+header > h1 > span{
+    color: orangered;
+}
+
+input {
+    background-color: black;
+    color: white;
+    width: 80vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: #202024;
+}
+
+input::placeholder{
+    color: aliceblue;
+    padding-left: 10px;
+    
+}
+
+section{
+    background-color: #1a1a1b;
+    width: 320px;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+section > p{
+    text-indent: 10px;
+    padding: 10px;
+    padding-top: 20px;
+   
+    
+}
+
+section:hover{
+    border: 2px solid rgba(255, 68, 0, 0.771);
+    transition: transform 0.5 border 2s;
+}
+
+
+
+
+section > h1{
+    color: white;
+    text-indent: 10px;
+    padding: 10px;
+}
+
+h2{
+    color: white;
+    text-indent: 10px;
+    padding: 10px;
+}
+
+ul{
+    color: white;
+}
+
+li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+
+span.icon{
+   color: white;
+   float: right;
+   font-size: 30px;
+   
+   
+   
+  
+} 
+
+span.icon.active{
+   color: orangered;
+}  
+ 
+
+
+
+.data{
+    color: orangered;
+    padding-top: 20px;
+}
+
+P{
+    color: white;
+   
+}
+
+
+
