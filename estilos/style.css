@@ -9,19 +9,19 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+   font-optical-sizing: auto;
+   font-weight: weight;
+   font-style: normal;
 }
 
 body{
-    background-color: #202024;
+   background-color: #202024;
+    
 }
-
+  
 header{
-    background-color: rgba(78, 72, 72, 0.189);
-   
-    height: 140px;
+     background-color: rgba(78, 72, 72, 0.189);
+     height: 140px;
 }
 
 header > h1{
@@ -38,6 +38,7 @@ input {
     background-color: black;
     color: white;
     width: 80vw;
+    padding: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 20px;
@@ -50,6 +51,7 @@ input {
 input::placeholder{
     color: aliceblue;
     padding-left: 10px;
+    
     
 }
 
@@ -112,6 +114,7 @@ span.icon{
 
 span.icon.active{
    color: orangered;
+   transition:  1.2s;
 }  
  
 
@@ -127,5 +130,7 @@ P{
    
 }
 
-
+#semResultado{
+    display: none;
+}
 
