@@ -1,18 +1,12 @@
-const btn = document.getElementById('botao')
-const btn2 = document.getElementById("botao2")
-const btn3 = document.getElementById("botao3")
- 
-btn.addEventListener("click", ()=> {
-   btn.classList.toggle("active")
-})
+const btn = [...document.querySelectorAll('#botao')]
 
-btn2.addEventListener("click", ()=> {
-    btn2.classList.toggle("active")
+ btn.map((el)=>{
+   el.addEventListener("click", (evt)=>{
+      const el = evt.target
+      el.classList.toggle("active")
+   
+   })
  })
-
- btn3.addEventListener("click", ()=> {
-   btn3.classList.toggle("active")
-})
 
 
 
