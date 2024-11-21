@@ -19,23 +19,29 @@ const btn = [...document.querySelectorAll('#botao')]
 
     let noresult = document.getElementById("semResultado")
 
+    let footer = document.getElementById("footer")
+
      inputElement.addEventListener("input", (e) => 
-      { let inputed = e.target.value.toLowerCase().trim(); 
+      { let inputed = e.target.value.toLowerCase().trim();
+        let found = false
           sectionElements.forEach((section) => {
              let h1 = section.querySelector("h1"); 
               if (h1 &&  h1.textContent.toLowerCase().includes(inputed))
                 { 
                    section.style.display = "block"; 
+                   found = true
                
              } else  {
-                section.style.display = "none"; 
-                
+                  section.style.display = "none"; 
+                 
              } 
 
              if (inputed === ""){
                noresult.style.display = "none"
-             } else{
-               noresult.style.display = "block"
+               footer.classList.remove('fundo')
+             } else {
+               noresult.style.display = found ? "none" : "block"
+                footer.classList.add('fundo')
              }
             });
           });
