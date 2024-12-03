@@ -1,4 +1,4 @@
-const btn = [...document.querySelectorAll('#botao')]
+const btn = [...document.querySelectorAll('.botao')]
 
  btn.map((el)=>{
    el.addEventListener("click", (evt)=>{
@@ -22,7 +22,7 @@ const btn = [...document.querySelectorAll('#botao')]
     let footer = document.getElementById("footer")
 
      inputElement.addEventListener("input", (e) => 
-      { let inputed = e.target.value.toLowerCase().trim();
+      { let inputed = e.target.value.toLowerCase().trim()
         let found = false
           sectionElements.forEach((section) => {
              let h1 = section.querySelector("h1"); 
