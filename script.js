@@ -25,7 +25,7 @@ const btn = [...document.querySelectorAll('.botao')]
       { let inputed = e.target.value.toLowerCase().trim()
         let found = false
           sectionElements.forEach((section) => {
-             let h1 = section.querySelector("h1"); 
+             let h1 = section.querySelector("h2"); 
               if (h1 &&  h1.textContent.toLowerCase().includes(inputed))
                 { 
                    section.style.display = "block"; 
